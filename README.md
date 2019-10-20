@@ -111,3 +111,74 @@ Might be nice if we could control the number of images that were displayed from 
 Add an input type "range". Give this an id of "image-count". Set the min to "1" and max to "6".
 
 ## Challenge 4 - Forms
+
+Writing froms is an important and common task for web developers. This example page has a long form with many inputs. There are some styles at the bottom that will style the form elements in a reasonable way. 
+
+Your job is to configure all of the form elements. You'll do this by setting the attributes on each to fit the type of input that element is accepting. 
+
+Tasks: 
+
+### Task 1
+
+  **Associate labels with inputs.** If an input is a child of 
+  a label they are associated/linked. If not you can 
+  associate/link them using the for and id attributes. 
+
+  For example: 
+
+```html
+  <label>
+    Some Label
+    <input>
+  </label>
+```
+
+  or
+  
+```html
+  <label for="some-id">Some Label</label>
+  <input id="some-id">
+```
+
+  Some of the labels below have a nested input and 
+  others do not. Your job is to find the labels that do not 
+  have nested inputs and use the id and for attributes to 
+  associate/link them. 
+
+### Task 2: 
+
+  **Set the attribute for each input.** The inputs in the 
+  form need to take various types of data. Some take text
+  some take numbers, some take files, colors, or dates. Your
+  job is to configure each input to handle the correct type 
+  of input by setting the type attribute. 
+
+  Inputs also have a placeholder attribute that displays 
+  a placeholder message. You should configure this to a 
+  reasonable value. 
+
+  The browser will autocomplete on some inputs if we allow
+  it. Some inputs want this and otherd do not. 
+
+  Inputs should have a name attribute this sets the key for 
+  the value submitted from the form. Give each input a name
+  that makes sense. 
+
+  Refer to this list of input attributes for more info: 
+
+  https://www.w3schools.com/html/html_form_attributes.asp
+ 
+  Take a look at each of the inputs and set the attributes 
+  following the guide below. 
+
+  - Enter their User name (input type text, should not autocomplete)
+  - Email (input email)
+  - Number of pets (input number)
+  - Birthday (input date)
+  - Choose an prefix (select)
+  - Set a role (input type radio)
+  - Show public profile (input checkbox, should be checked by default)
+  - Enter a bio (textarea)
+  - Upload a picture (input file, should only accept images)
+  - Self Destruct (input checkbox, should be DISABLED by default since we haven't implemented this feature yet)
+  
