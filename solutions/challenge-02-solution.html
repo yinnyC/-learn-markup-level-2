@@ -50,7 +50,7 @@
       function fetchData(category = 'people', value = 1) {
         category = category ? category : 'people'
         value = value ? value : 1
-        const path = `https://swapi.co/api/${category}/${value}`
+        const path = `https://swapi.dev/api/${category}/${value}`
         console.log(path)
         fetch(path)
         .then(res => res.json())
